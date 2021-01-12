@@ -2,7 +2,7 @@ https://codepen.io/The_Redcoats/pen/dypgZzv?editors=1100
 
     1. What is Semantic HTML? 
     - Semantic HTML is the use of key words and phrases to perfrom certain functions and proccesses through contructed code to
-     give meaning and structure to what the intended display and purpose is. 
+     give meaning and structure to what the intended display and purpose is.  
     2. What is HTML used for? 
     -HyperText Markup Language is the framework and structure of web pages and 
     3. What is an attribute and where do we put it? 
