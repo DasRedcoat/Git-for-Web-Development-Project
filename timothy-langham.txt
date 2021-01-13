@@ -1,50 +1,124 @@
 https://codepen.io/The_Redcoats/pen/dypgZzv?editors=1100
 
     1. What is Semantic HTML? 
-    - Semantic HTML is the use of key words and phrases to perfrom certain functions and proccesses through contructed code to
-     give meaning and structure to what the intended display and purpose is.  
-    2. What is HTML used for? 
-    -HyperText Markup Language is the framework and structure of web pages and 
+     - Semantic HTML is the use of key words and phrases to perfrom certain functions and proccesses         through contructed code to give meaning and structure to what the intended display and purpose          is.  
+    2. What is HTML used for?
+     - HyperText Markup Language is the framework and structure of web pages and it's content, NOT how        it is displayed - that is CSS and Java
     3. What is an attribute and where do we put it? 
+     - Attriutes  give additional information about an element, such as how it will be used. An anchor        tag that needs to reference a web page, to make a hyperlink, will be  (a href=) in this case,          the href is the attribute to the anchor tag, making it a link to another page. 
     4. What is the h1 tag used for? How many times should I use it on a page?
+     - The h1 tag is the largest heading element you can use. it should only be used once, as the title        or main topic of a page.
     5. Name two tags that have required attributes
+    - anchor tag (a href=) and images that need sources (img src=)
     6. What do we put in the head of our HTML document? 
-    7. What is an id? 
+    - The head contains the name/title of the work, and it is not displayed on the webpage but rather         used as a reference in the web address to know the title of the page you are on. 
+    7. What is an id? d
+     - an id is a unique attribute to an HTML setup or formatting. used to reference other elements          constructed in the CSS that you want the HTML to reference. Such as making a container or a
+     button, and then referencing the id in the section it is used in.
     8. What elements can I add an id to? 
+     - You can add an id to any element that you you want to have a single use for. if you want to assign CSS characteristics to multiple elements with the same effect, you would use a class. 
     9. How many times can I use the same id on a page? 
+     - as many times as you wish, as long as it is the SAME effects you want to happen.
     10. What is a class? 
+     - A class is a catagory, essentially. You can customize the look of HTML using CSS, and give a    
+       class using a . then anything references to that class will take the effects determined in the 
+       CSS.
     11. What elements can I add a class to? 
+     - Any that you wish to have the same CSS effects. Such as if you were writing an article about mutliple cities, you would use the class = "city", in this case the class is "city", created in CSS. and whenever HTML references that class, it will use the "city" designed HTML.
     12. How many times can I use the same class on a page? 
+     - As many as you wish
     13. How do I get my link to open in a new tab?
-    14. What is the alt attribute in the image tag used for? 
+     - Add a target="_blank" attribute after your a href= anchor tag.
+    14. What is the alt attribute in the image tag used for?
+    - Something else to display if the image does not. best to fill it in with "image not displayed" so 
+      that users who don't see an image, know one should be there. 
     15. How do I reference an id?
+    - Create the id in CSS, and give it a reference name for in the HTML. Such as "h1 id = "my header" in the HTML. and in your CSS, you will have "h1 id = my header" along with all the CSS customizations that you want the HTML to apply to that section of the webpage. 
     16. What is the difference between a section and a div
+    - Section is done in-line, directly in the HTML. A div is a catagory set up in CSS that the HTML  
+      references and can cover multiple objects on a page versus just a single one in which a section 
+      would be used. 
     17. What is CSS used for? 
-    18. How to we select an element? Example - every h2 on the page
-    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    - Customizing the look and layout of a webpage. HTML is the content, CSS is how it looks, and Java is how they all interact with one another. 
+    18. How do we select an element? Example - every h2 on the page
+    - Ctrl + G
+    19. What is the difference between a class and an id? - Give me an example of when I might use each         one.
+     - An id is used to reference one specific element on a page to use a CSS layout. A class will apply a CSS layout to everything assigned to that class. So if you had multiple sections on places to visit on vacation, you could use a class = vacation destinations. But for something singular, like a header layout, you would use a single ID to associate the CSS for it. 
     20. How do we select classes in CSS?
-    21. How do we select a p element with a single class of “human””?
+    - you use a period . followed by the name of the class. such as (.city)
+    21. How do we select a p element with a single class of “human”?
+    - You have to give the p element a class of human, within a <div> in CSS. Such as 
+            <div>
+              <p class="parent">
+                <a href="#">random</a>
+              </p>
+            </div>
     22. What is a parent child selector? When would this be useful? 
+     - a parent > child selector is used whenever you want a child element to use the characteristics 
+      of the parent. 
     23. How do you select all links within a div with the class of sidebar?
+     - Assign it a class in the CSS, such as .sidebar, and in the HTML you seperate the anchor tags and links into a div, and assign it as <div class="sidebar"
     24. What is a pseudo selector?
+    - a pseudo selector, selects elements that are in a specific state. Such as the first letter of the first name, or every 3rd item on a list, and gives it an effect. Can also be used for hovers. Such as a:hover {from background: color} {to background:color} when a link is hovered over. 
     25. What do we use the change the spacing between lines?
+     - a syle element with line height and define the amount using a number, decimal or percentage.
+      such as <p style="line-height:2">
     26. What do we use to change the spacing between letters?
+     - in CSS, you assign a class to what content you want spaced. Suchs a "body". and use "letter-spacing" as the value. Such as:
+
+            h1 {
+              letter-spacing: 4px;
+}
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+     -  you use the text transform value in the CSS. such as: 
+
+     div.capitalizedparagraph {
+        text-transform: uppercase;
+}
+
     28. How do I add a 1px border around my div that is dotted and black?
+       div.blackdottedborder {
+        border-style:dotted;
+        border-color:black;
+}
     29. How do I select everything on the page? 
+      - wrap it all in one big div for CSS effects. To select all on a screen whilst working, i use Ctrl + A
     30. How do I write a comment in CSS?
+    You wrap it in a forward slash and asterisk. such as /*comment*/
     31. How do I find out what file I am in, when I am using the command line? 
+       type "cd" and hit enter
     32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        rm "name of file" - be careful because it will delete it PERMANENTLY, and not ask if you're sure.
     34. Why should I use version control? 
+    - to always know that you are editing and using the most up-to-date version of something. If you work on something that is outdated, you could end up fixing or working on things that have already been fixed and shared for others to fork and use.
     35. How often should I commit to github?
+      - very often. every 30 minutes or so. At least save your work constantly. use Ctrl+s all the time like a bad (but good) habit
     36. What is the command we would use to push our repo up to github? 
+     - git push -u origin "timothy-langham" (or whatever you have named your branch)
     37. Walk me through Lambda's git flow. 
+       - you go to the file you wish to work on in GitHub. You fork it to your own repositories. go to your repositories and copy the http clone address. Open GitBash and go to the file you wish to clone it to. In this case it is desktop/lambda/unit1/w1d2/NameofProject once you are in that file by checking with "cd" you type into the command "git clone WebAddress". this will clone it to your file foolder. After that DONT FORGET to cd INTO the new file by typing "cd filename" to go into it. 
+
+Once you are in the file using GitBash, you want to "checkout" your version, to be able to edit it. type "checkout -b timothy-langham" to create the branch. Then open it using "code ." to edit and work. Once you are done, SAVE YOUR WORK using Ctrl+S, you then "add" your changes to the saved file using the command "git add ." - this will update the file and make it ready to commit. to commit you type 
+  git commit -m "message" (in the " is where you leave your version notes ") 
+
+Finally, you push it back to the github server using (git push -u origin timothy-langham) - NOTE That the file name is not in quotes for the final step. 
+
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+   - block elements take effect over the max allowed space on a page. from border to border. A paragraph (p) is a block element. and it will stretch side-to-side unless otherwise contained by a border. An in-line element on the other hand, will effect just the line it is added to in the code, such as making a line of text bold or inserting an image onto a line. if you want an image to display between lines above and below it. you need to center it with a margin value, and add line breaks <br> above and below it. 
+
     2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+   - When an element is positioned absoolutely, it disregardes the other CSS code being read, and will absolutely, put it in the spot you intend. Such as a photograph next to a paragraph or centering an image for a background.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? Set it inside a box and give it a margin: auto???
+
+    4. Name 3 elements that diplay block by default, 2 elements that are display inline by default and 1 element that is displayed inline-block by default
+  - Block - Headings, paragraphs, and divisions. In-line elements are spans, images and anchors. and buttons are an in-line block display be default
+
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    - Give the Margins and a center:auto; element.
